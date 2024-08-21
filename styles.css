@@ -1,0 +1,103 @@
+/* Animasi */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    background-color: #ff4081;
+  }
+  50% {
+    background-color: #ff79b0;
+  }
+  100% {
+    background-color: #ff4081;
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("foto2.jpg"); /* Ganti dengan gambar background yang diinginkan */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-section .content {
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #ff4081;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.button:hover {
+  animation: buttonHover 0.5s infinite;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff4081;
+}
+
+.foto-pacar {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  margin: 20px 0;
+  object-fit: cover;
+  animation: fadeIn 3s ease-in-out;
+}
